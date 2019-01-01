@@ -1,0 +1,22 @@
+{
+  "name": "onlineshop",
+  "version": "1.0.0",
+  "description": "Online Shop made with Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadimRai/Node-Online-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadimRai/Node-Online-Shop/issues"
+  },
+  "homepage": "https://github.com/NadimRai/Node-Online-Shop#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
