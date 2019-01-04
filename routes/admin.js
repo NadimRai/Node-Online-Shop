@@ -7,7 +7,7 @@ const rootDir = require('../util/path');
 const products = [];
 
 router.get('/add-product',(req,res,next) =>{
-    res.render('add-product',{pageTitle: 'Add Product Page'})
+    res.render('add-product',{pageTitle: 'Add Product Page', path: '/admin/add-product'})
 
 });
 
