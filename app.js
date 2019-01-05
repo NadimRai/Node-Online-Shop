@@ -8,6 +8,7 @@ app.set('views','views');
 
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop')
+const errorController = require('./controllers/404');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname,'public')));
@@ -15,9 +16,7 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use('/admin',adminRoutes);
 app.use(shopRoutes);
 
-app.use('/',(req,res,next) =>{
-    res.status(404).render('404',{path: '/',pageTitle: 'Page Not Really Found'});
-});
+app.use('/',errorController.errorPage);
 
 
 app.listen(3000);
