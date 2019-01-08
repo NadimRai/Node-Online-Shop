@@ -21,6 +21,13 @@ exports.getProducts = (req,res,next) =>{
     });
 }
 
+exports.getProduct = (req,res,next) =>{
+   const prodId = req.params.productId;
+   Product.findById(prodId, product =>{
+       console.log(product);
+   })
+   res.redirect('/');
+}
 exports.getOrders = (req,res,next) =>{
     res.render('shop/orders', {
         pageTitle:'Your Orders', 
