@@ -32,7 +32,7 @@ exports.getEditProduct = (req,res,next) =>{
             pageTitle: 'Edit Product Page', 
             path: '/admin/edit-product',
             editing: editMode,
-            // product: product
+            product: product
         })
     })   
 };
